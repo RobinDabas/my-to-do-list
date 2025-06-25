@@ -1,15 +1,16 @@
-function addTask(){
+function addTask() {
   const taskInput = document.getElementById('taskInput');
   const taskText = taskInput.value.trim();
-  if(taskText !== '') {
-    const li = document.createElement('li');
-    li.textContent = taskText;
-    document.getElementById('taskList').appendChild(li);
-    textInput.value = '';
-  }
-}
 
-function deleteTask() {
+  if(taskInput !== '') {
+    const li = document.createElement('li')
+    li.textContent = taskText;
+    document.getElementById('taskInput').appendChild(li)
+    taskInput.value = '';
+  }
+} 
+
+function deleteAllTasks() {
   const taskList = document.getElementById('taskList');
   taskList.innerHTML = '';
 }
