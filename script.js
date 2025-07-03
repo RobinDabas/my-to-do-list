@@ -114,4 +114,24 @@ var income = 8500;
 var expenses = 2000;
 
 var monthlyNetEarnings = calculateTotal(income, expenses);
-console.log(monthlyNetEarnings);
+console.log(monthlyNetEarnings);0
+
+
+function miCelebracion(razon) {
+  let estilo = 'color: turquoise; font-size: 30px';
+  if (razon === 'ganar') {
+    console.log('%cMira vos, ganaste parcero. Sos lo maximo!', estilo);
+  } else if (razon === 'fallar') {
+    console.log('%cVos fallaste cabron!', estilo);
+  } else {
+    console.log('%cIntenta de nuevo parcero. Creo en vos. Vos podes hacerlo', estilo);
+  }
+}
+miCelebracion('fallar');
+
+
+
+
+
+
+
