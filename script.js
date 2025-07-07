@@ -135,3 +135,127 @@ miCelebracion('fallar');
 
 
 
+var car1 = {
+  car: 20000,
+  salesTax: 1.2,
+  totalPrice: function() {
+    var calculate = car1.car * car1.salesTax;
+    console.log('Total Price:', calculate);
+  }
+ }
+ car1.totalPrice();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ var flight1 = {
+  ticket: 1700,
+  tax: 1.2,
+  total: function() {
+    var calculation = flight1.ticket * flight1.tax;
+    console.log('Total with tax:', calculation)
+  }
+ }
+flight1.total();
+*/
+
+
+var boleto = 1700
+var impuesto = 1.2
+
+function precioTotal(boleto, impuesto) {
+  return boleto * impuesto;
+}
+
+var pagar = precioTotal(boleto, impuesto);
+console.log(pagar);
+
+
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  sound() {
+    return `${this.name} makes a sound.`;
+  }
+}
+
+class Parrot extends Animal {
+  constructor(name, type) {
+    super(name);
+    this.type = type;
+  }
+
+  sound() {
+    return `${this.name} sings.`
+  }
+}
+
+const myParrot = new Parrot('Polly', 'Blue Macaw Parrot')
+console.log(myParrot.sound());
+console.log(myParrot.name);
+console.log(myParrot.type);
+
+
+class LuxuryCar {
+  constructor(brand) {
+    this.brand = brand
+  }
+
+  speed(){
+    return `${this.brand} is very fast.`;
+  }
+}
+
+class Lamborghini extends LuxuryCar {
+  constructor(brand, type) {
+    super(brand);
+    this.type = type;
+  }
+
+  speed(){
+    return `${this.brand} ${this.type} is one of the fastest cars in the world.`
+  }
+}
+
+class GWagon extends Lamborghini {
+  constructor(brand, model) {
+    super(brand);
+    this.model = model;
+  }
+
+  speed(){
+    return `The brand ${this.brand} and the model ${this.model}, is one of the most luxurious cars in the world.`
+  }
+}
+
+/*
+const myLuxuryCar = new Lamborghini('Lamborghini', 'Aventador');
+console.log(myLuxuryCar.speed());
+console.log(myLuxuryCar.brand);
+console.log(myLuxuryCar.type);
+*/
+
+const myLuxuryCar = new GWagon('Mercedez', 'G-wagon');
+console.log(myLuxuryCar.speed());
+console.log(myLuxuryCar.brand);
+console.log(myLuxuryCar.model);
