@@ -259,3 +259,43 @@ const myLuxuryCar = new GWagon('Mercedez', 'G-wagon');
 console.log(myLuxuryCar.speed());
 console.log(myLuxuryCar.brand);
 console.log(myLuxuryCar.model);
+
+
+class Pajaro {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+  hecho() {
+    return `${this.nombre} puede imitar lo que vos decis.`
+  }
+} class Loro extends Pajaro {
+  constructor(tipo, pais) {
+    super(tipo);
+    this.tipo = tipo;
+    this.pais = pais;
+  } 
+  
+  hecho() {
+    return `${this.tipo} se encuentra en ${this.pais}.`
+  }
+}
+const miPajaro = new Loro('El Loro Africano', 'el Congo')
+console.log(miPajaro.hecho());
+console.log(miPajaro.tipo);
+console.log(miPajaro.pais)
+
+
+let fecha = new Date();
+console.log(fecha)
+
+Math: Math.pow(2,5);
+console.log(Math);
+
+
+function Pupusa(queso) {
+  this.queso = queso;
+  this.derretir = function() {return `La ${this.queso} en la pupusa esta derretido. Listo pa comer ya.`; };
+}
+
+let pupusaMozzarella = new Pupusa('mozzarella');
+console.log(pupusaMozzarella.derretir());
