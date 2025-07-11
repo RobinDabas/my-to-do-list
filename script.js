@@ -304,5 +304,13 @@ var laFecha = new Date();
 console.log(laFecha);
 
 
+//An If statement, are conditional statements that are executed based on conditions. For example if it evaulates a boolean expression and it's true or false, the one deemed true will be the result, which in this case was the first conditional statement, 'Vos sos un adulto', because the individual's age is 35.
+let suEdad = 16;
+if(suEdad >= 18) {
+  console.log('Vos sos un adulto.');
+} else {
+  console.log('Vos sos menor de edad.');
+} 
 
+console.log(suEdad);
 
