@@ -294,8 +294,15 @@ console.log(Math);
 
 function Pupusa(queso) {
   this.queso = queso;
-  this.derretir = function() {return `La ${this.queso} en la pupusa esta derretido. Listo pa comer ya.`; };
+  this.derretir = function() {return `La ${this.queso} en la pupusa esta derretido. Listo pa vos.`; };
 }
 
 let pupusaMozzarella = new Pupusa('mozzarella');
 console.log(pupusaMozzarella.derretir());
+
+var laFecha = new Date();
+console.log(laFecha);
+
+
+
+
